@@ -30,7 +30,7 @@ namespace Rodkulman.TestemunhaBot
             me = bot.GetMeAsync().Result;            
 
             bot.StartReceiving();
-            tm = new Timer(TimerTick, null, TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(5));
+            tm = new Timer(TimerTick, null, TimeSpan.FromSeconds(5), TimeSpan.FromMinutes(10));
 
             Console.WriteLine($"Start listening for @{me.Username}");
 
